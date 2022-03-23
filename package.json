@@ -1,0 +1,29 @@
+{
+  "name": "qqsqlwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "ts-node .",
+    "build": "tsc",
+    "start:prod": "node ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "md5": "^2.3.0",
+    "mirai-js": "^2.4.2",
+    "moment": "^2.29.1",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.2"
+  },
+  "devDependencies": {
+    "@types/colors": "^1.2.1",
+    "@types/md5": "^2.3.2",
+    "@types/nodemailer": "^6.4.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  }
+}
