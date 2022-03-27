@@ -28,6 +28,11 @@ export const workflow = new Middleware()
             await next()
             logger.log(`insert into database ${Date.now() - startTime} ms -> ${JSON.stringify(data.mysqlObj)}`)
         } catch (error: any) {
+            if (error?.errno == 1062) {
+                'ignore the duplicate error'
+                return
+            }
+
             logger.error(error)
             if (config.enableMailer) {
                 try {
